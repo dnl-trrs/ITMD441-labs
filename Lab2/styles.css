@@ -12,27 +12,27 @@
 
 /* Flexbox Part 2 */
 #flex-section2 ul {
-	display: flex; /* This makes the list items appear in a row */
-	justify-content: space-between; /* Adds equal space between the columns */
+	display: flex; /* puts items in one row */
+	justify-content: space-between; /* columns are equally spaced */
 	padding: 0;
 	margin: 0;
-	list-style: none; /* Removes default list-style (bullets) */
+	list-style: none; /* no bullet points*/
   }
   
   #flex-section2 ul li {
-	flex: 1; /* Makes each list item (column) take up equal space */
+	flex: 1; /* allows items to be in a singular row */
   }
-  
+/* columns */
   #flex-section2 .item1 {
-	order: 1; /* First column */
+	order: 1; 
   }
   
   #flex-section2 .item2 {
-	order: 3; /* This moves list item 2 to the third column */
+	order: 3; 
   }
   
   #flex-section2 .item3 {
-	order: 2; /* This moves list item 3 to the second column (middle) */
+	order: 2; 
   }
 /* end Flexbox Part 2 */
 
@@ -51,11 +51,14 @@
 
 
 /* Grid Part 1 */
-
 #grid-section1 .grid {
-
-}
-
+	display: grid; /* grid layout */
+	grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+	grid-auto-rows: 100px; /* rows are 100px tall */
+	gap: 20px; /* 20px gap between boxes */
+	padding: 0;
+	margin: 0;
+  }
 /* end Grid Part 1 */
 
 
