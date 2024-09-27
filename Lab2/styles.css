@@ -37,11 +37,30 @@
 
 /* Flexbox Part 3 */
 #flex-section3 .box {
+	display: flex;
+	justify-content: center; /* horizontally center the card */
+	align-items: center; /* vertically center the card */
+	height: 100%; /* ensure container is full height to apply vertical centering */
+	text-align: center;
+  }
 
-}
-#flex-section3 .tags ul {
-
-}
+  #flex-section3 .tags ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /* wrap to new line when needed */
+	gap: 10px;
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 0 0;
+  }
+  
+  #flex-section3 .tags ul li {
+	background-color: #ddd;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	border: 1px solid #999;
+  }
 /* end Flexbox Part 3 */
 
 /* Grid Part 1 */
@@ -54,7 +73,6 @@
 	margin: 0;
   }
 /* end Grid Part 1 */
-
 
 /* Grid Part 2 */
 #grid-section2 .grid {
@@ -81,7 +99,6 @@
 	z-index: 1; /* red is layered under blue */
   }  
 /* end grid part 2 */
-
 
 /* Grid Part 3 */
 #grid-section3 .grid {
