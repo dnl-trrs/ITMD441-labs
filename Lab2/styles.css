@@ -10,29 +10,30 @@
 
 /* end Flexbox Part 1 */
 
-
 /* Flexbox Part 2 */
-
 #flex-section2 ul {
-
-}
-
-#flex-section2 li {
-
-}
-
-#flex-section2 .item1 {
-
-}
-
-#flex-section2 .item2 {
-
-}
-
-#flex-section2 .item3 {
-
-}
-
+	display: flex; /* This makes the list items appear in a row */
+	justify-content: space-between; /* Adds equal space between the columns */
+	padding: 0;
+	margin: 0;
+	list-style: none; /* Removes default list-style (bullets) */
+  }
+  
+  #flex-section2 ul li {
+	flex: 1; /* Makes each list item (column) take up equal space */
+  }
+  
+  #flex-section2 .item1 {
+	order: 1; /* First column */
+  }
+  
+  #flex-section2 .item2 {
+	order: 3; /* This moves list item 2 to the third column */
+  }
+  
+  #flex-section2 .item3 {
+	order: 2; /* This moves list item 3 to the second column (middle) */
+  }
 /* end Flexbox Part 2 */
 
 
