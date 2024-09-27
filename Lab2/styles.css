@@ -55,7 +55,7 @@
   }
   
   #flex-section3 .tags ul li {
-	background-color: #ddd;
+	background-color: #ddd; /* Light grey background for tags */
 	padding: 5px 10px;
 	border-radius: 5px;
 	font-size: 14px;
@@ -131,24 +131,21 @@
   }  
 /* end Grid Part 3 */
 
-
 /* Transition Part */
-
 #transition-section .box a {
 	display: inline-block;
-	background-color: #ccc;
-	color: #000;
+	background-color: #ccc; /* initial background color */
+	color: #000; /* initial text color */
 	padding: 20px;
 	text-decoration: none;
-
-
-}
-
-#transition-section .box a:hover {
-	background-color: #cc0000;
-	color: #fff;
-
-
-}
-
+	/* transition for background and text */
+	transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  #transition-section .box a:hover {
+	background-color: #cc0000; /* change to red on hover */
+	color: #fff; /* change to white text on hover */
+	/* modify the transition duration when the hover state ends */
+	transition: background-color 3s ease, color 3s ease;
+  }
 /* end Transition Part */
