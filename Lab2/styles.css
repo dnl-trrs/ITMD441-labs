@@ -1,5 +1,4 @@
 /* Flexbox Part 1 */
-
 #flex-section1 ul {
 	display: flex;
 	justify-content: space-around;
@@ -7,7 +6,6 @@
 	margin: 0;
 	list-style: none;
   }
-
 /* end Flexbox Part 1 */
 
 /* Flexbox Part 2 */
@@ -22,6 +20,7 @@
   #flex-section2 ul li {
 	flex: 1; /* allows items to be in a singular row */
   }
+
 /* columns */
   #flex-section2 .item1 {
 	order: 1; 
@@ -36,19 +35,14 @@
   }
 /* end Flexbox Part 2 */
 
-
 /* Flexbox Part 3 */
-
 #flex-section3 .box {
 
 }
-
 #flex-section3 .tags ul {
 
 }
-
 /* end Flexbox Part 3 */
-
 
 /* Grid Part 1 */
 #grid-section1 .grid {
@@ -63,16 +57,30 @@
 
 
 /* Grid Part 2 */
-
-#grid-section2 .gridboxblue {
-
-}
-
-#grid-section2 .gridboxred {
-
-}
-
-/* end Grid Part 2 */
+#grid-section2 .grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 20px;
+	position: relative;
+  }
+  
+  #grid-section2 .gridboxblue {
+	grid-column: 2 / 4;
+	grid-row: 1 / 6;
+	background-color: rgba(0, 0, 255, 0.6); /* added transparency */
+	border: 5px solid darkblue;
+	z-index: 2; /* blue is layered above red */
+  }
+  
+  #grid-section2 .gridboxred {
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
+	background-color: rgba(255, 0, 0, 0.6);
+	border: 5px solid darkred;
+	z-index: 1; /* red is layered under blue */
+  }  
+/* end grid part 2 */
 
 
 /* Grid Part 3 */
